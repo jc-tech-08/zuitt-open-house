@@ -1,3 +1,8 @@
 Hello World!
 
 Welcome to Zuiit Open House.
+
+Tools In this ZOH:
+- Git
+- HTML
+- CSS
