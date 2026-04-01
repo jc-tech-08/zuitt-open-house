@@ -1,0 +1,119 @@
+/*
+CSS Syntax:
+Selector{
+	property: value;
+}
+
+
+*/
+
+html{
+	/* allows us to have a smooth scrolling behavoir when we navigate to different section of the page using anchor tags. */
+	scroll-behavior: smooth;
+}
+/*Universal Selector (*) */
+* {
+	font-family: "Courier New", monospace;
+
+	/*CCS Reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* tag/type selector - target elements with a specified type/tag name*/
+
+h1{
+	font-family: "Tahoma", sans-serif;
+}
+
+body{
+	/*background-color: skyblue;*/
+	/* Take a path of the image and allows us to add the image as a background*/
+	background-image: url(https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section{
+	text-align: center;
+}
+
+nav{
+	background-color: white;
+	text-align: center;
+	/*padding is a property that allow us to add a space within an element*/
+	/* paddingL: _px - add space in all direction of the element (TBLR)*/
+	padding: 15px;
+	/*border: 10px solid green;*/
+}
+
+/* Class Selector (.) targets elements based on className*/
+.nav-link{
+	font-size: 18px;
+}
+
+.title{
+	/*color: green;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*ID Selector (#) target element based on the id attribute */
+#hello{
+	color: black;
+	/* root is a measurement called root element and it references the font-size of the root
+	- The default root element font-size is 16px.
+	*/
+	/*
+		= 2rem
+		= 2(16px)
+		2rem = 32px
+	*/
+
+	font-size: 2rem;
+
+}
+
+#logo{
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+a{
+	/* removes anchor tag text decoration */
+	text-decoration: none;
+}
+
+/*Without border-box*/
+/* width: 1px border (left) + 50px padding (left) + 1px border (right) + 50px padding (right) + 150px (width) = 252px  */
+
+/*With border-box*/
+/* width: 1px border (left) + 50px padding (left) + 1px border (right) + 50px padding (right) + 48px (width) = 150px */
+
+.module-card{
+	height: 350px;
+	width: 800px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 20px;
+	/*margins are space outside the element.*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+	/* "auto* allow us to automatically calculate the remaining space within the container and center the element. */
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+#moduleHeader{
+	margin-top: 30px;
+}
+
+.module-image{
+	width: 200px;
+	height: 200px;
+}
